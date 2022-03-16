@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
     <head>
-
+        <meta charset="UTF-8"/>
     </head>
+    <title> Title </title>
+
+    <body>
+        <div id="app">
+            <button><a th:href="@{/app/add}"> Add Task </a></button>
+            <button><a th:href="@{/app/show}"> Show Task </a></button>
+        </div>
+    </body>
 </html>
