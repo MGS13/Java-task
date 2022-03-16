@@ -1,10 +1,10 @@
-package com.todo.todo.controller;
+// package com.todo.todo.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.stereotype.Controller;
 
-@Controller
-public class DataController {
-    @Autowired
-    OptionsService service;
-}
+// @Controller
+// public class DataController {
+//     @Autowired
+//     OptionsService service;
+// }
