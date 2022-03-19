@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <title> Show Todo</title>
+    <body>
+        <form action="#" th:action="@{/app/show}" th:object="${todo}" method="get">
+            <div id="boxes">
+                <input type="checkbox" id="chaos" name="chaos">
+                <label for="chaos"> Chaos </label>
+            </div>
+        </form>
+    </body>
+</html>

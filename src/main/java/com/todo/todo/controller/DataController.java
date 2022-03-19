@@ -13,10 +13,10 @@ public class DataController {
     // @Autowired
     // OptionsService service;
 
-    @GetMapping("/app/add")
+    @GetMapping("/app/show")
     public String addTask(Model model) {
         // model.addAttribute("todo", new Options());
         model.addAttribute("opt", new Options());
-        return "add-todo";
+        return "show-todo";
     }
 }
