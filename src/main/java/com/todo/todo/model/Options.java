@@ -1,5 +1,7 @@
 package com.todo.todo.model;
 
+import javax.persistence.Entity;
+
 public class Options {
     private Boolean task1, task2, task3;
 

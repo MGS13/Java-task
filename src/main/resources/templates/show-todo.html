@@ -5,11 +5,25 @@
     </head>
     <title> Show Todo</title>
     <body>
-        <form action="#" th:action="@{/app/show}" th:object="${todo}" method="get">
+        <form action="#" th:action="@{/app/show}" th:object="${opt}" method="post">
             <div id="boxes">
-                <input type="checkbox" id="chaos" name="chaos">
+                <button type="submit" onclick="reset()"> Reset </button>
+                <br>
+
+                <input type="checkbox" id="chaos" name="chaos" th:checked="${task2}">
                 <label for="chaos"> Chaos </label>
+                <br>
+
+                <input type="checkbox" id="q" name="q" th:checked="${task1}">
+                <label for="q"> Q </label>
+                <br>
             </div>
         </form>
+
+        <script type="text/javascript">
+            function reset() {
+                document.getElementById("boxes").checked = false;
+            }
+        </script>
     </body>
 </html>
