@@ -1,8 +1,8 @@
-package com.todo.todo.controller;
+package com.todo.controller;
 
-import com.todo.todo.TodoApplication;
-import com.todo.todo.model.Options;
-import com.todo.todo.service.OptionsService;
+import com.todo.TodoApplication;
+import com.todo.model.Options;
+import com.todo.service.OptionsService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
