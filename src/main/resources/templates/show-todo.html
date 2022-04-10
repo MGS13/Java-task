@@ -7,10 +7,11 @@
 <title> Show Todo</title>
 
 <body>
-    <div id="boxes">
-        <button type="submit" onclick="reset()"> Reset </button>
-        <br>
-    </div>
+    <form action="#" th:action="@{/app/show}" th:object="${opt}" method="post">
+        <div id="boxes">
+            <button type="submit" onclick="reset()"> Reset </button>
+            <br>
+        </div>
     </form>
 
     <script type="text/javascript">
@@ -20,7 +21,7 @@
     </script>
 
     <table>
-        <tr">
+        <tr>
             <th style="border-right: solid 2px; border-bottom: solid 2px;"> Sharpshooter </th>
             <th style="border-right: solid 2px; border-bottom: solid 2px;"> Sorc </th>
             <th style="border-right: solid 2px; border-bottom: solid 2px;"> Gun Lancer</th>
@@ -84,7 +85,7 @@
                 </td>
             </tr>
     </table>
-
+    </form>
 </body>
 
 </html>
