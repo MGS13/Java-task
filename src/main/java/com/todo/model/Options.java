@@ -3,29 +3,45 @@ package com.todo.model;
 import javax.persistence.Entity;
 
 public class Options {
-    private Boolean task1, task2, task3;
+    private Boolean chaos, guardian, daily, weekly, chaosGate;
 
-    public void setTask1(Boolean task1) {
-        this.task1 = task1;
+    public Boolean getChaos() {
+        return chaos;
     }
 
-    public void setTask2(Boolean task2) {
-        this.task2 = task2;
+    public void setChaos(Boolean chaos) {
+        this.chaos = chaos;
     }
 
-    public void setTask3(Boolean task3) {
-        this.task3 = task3;
+    public Boolean getChaosGate() {
+        return chaosGate;
     }
 
-    public Boolean getTask1() {
-        return this.task1;
+    public void setChaosGate(Boolean chaosGate) {
+        this.chaosGate = chaosGate;
     }
 
-    public Boolean getTask2() {
-        return this.task2;
+    public Boolean getDaily() {
+        return daily;
     }
 
-    public Boolean getTask3() {
-        return this.task3;
+    public void setDaily(Boolean daily) {
+        this.daily = daily;
+    }
+
+    public Boolean getGuardian() {
+        return guardian;
+    }
+
+    public void setGuardian(Boolean guardian) {
+        this.guardian = guardian;
+    }
+
+    public Boolean getWeekly() {
+        return weekly;
+    }
+
+    public void setWeekly(Boolean weekly) {
+        this.weekly = weekly;
     }
 }
