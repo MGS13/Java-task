@@ -1,29 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8"/>
-    </head>
-    <title> Show Todo</title>
-    <body>
-        <form action="#" th:action="@{/app/show}" th:object="${opt}" method="post">
-            <div id="boxes">
-                <button type="submit" onclick="reset()"> Reset </button>
-                <br>
 
-                <input type="checkbox" id="chaos" name="chaos" th:checked="${task2}">
-                <label for="chaos"> Chaos </label>
-                <br>
+<head>
+    <meta charset="UTF-8" />
+</head>
+<title> Show Todo</title>
 
-                <input type="checkbox" id="q" name="q" th:checked="${task1}">
-                <label for="q"> Q </label>
-                <br>
-            </div>
-        </form>
+<body>
+    <form action="#" th:action="@{/app/show}" th:object="${opt}" method="post">
+        <div id="boxes">
+            <button type="submit" onclick="reset()"> Reset </button>
+            <br>
 
-        <script type="text/javascript">
-            function reset() {
-                document.getElementById("boxes").checked = false;
-            }
-        </script>
-    </body>
+            <table>
+                <tr>
+                    <th> Test 1 </th>
+                    <th> Test 2 </th>
+                </tr>
+
+                <tr>
+                    <input type="checkbox" id="chaos" name="chaos" th:checked="${task2}">
+                    <label for="chaos"> Chaos </label>
+                    <!-- <br> -->
+
+                    <input type="checkbox" id="q" name="q" th:checked="${task1}">
+                    <label for="q"> Q </label>
+                </tr>
+
+            </table>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        function reset() {
+            document.getElementById("boxes").checked = false;
+        }
+    </script>
+
+<table style=>
+    <tr style="border: solid 2px black">
+        <th> Header1 </th>
+        <th> Header2 </th>
+        <th> Header3 </th>
+        <th> Header4 </th>
+    </tr>
+
+    <tr>
+        <td>
+        <ul>
+            <li> <input type="checkbox"> </li>
+            <li> <input type="checkbox"> </li>
+            <li> <input type="checkbox"> </li>
+            <li> <input type="checkbox"> </li>
+            <li> <input type="checkbox"> </li>
+        </ul>
+        </td>
+        <td>
+            <ul>
+                <li> <input type="checkbox"> </li>
+                <li> <input type="checkbox"> </li>
+                <li> <input type="checkbox"> </li>
+                <li> <input type="checkbox"> </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li> <input type="checkbox"> </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li> <input type="checkbox"> </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+</body>
 </html>
